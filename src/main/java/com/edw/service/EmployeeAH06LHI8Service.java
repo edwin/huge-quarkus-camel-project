@@ -17,7 +17,7 @@ public class EmployeeAH06LHI8Service {
         CxfEndpoint cxfEndpoint = new CxfEndpoint();
         cxfEndpoint.setServiceClass(EmployeeServicePortType.class);
         cxfEndpoint.setAddress(employeeSoapUrl);
-        cxfEndpoint.setWsdlURL("/wsdl/employee.wsdl");
+        cxfEndpoint.setWsdlURL(null);
         cxfEndpoint.setDefaultOperationName("GetEmployeeById");
         cxfEndpoint.setDefaultOperationNamespace("http://localhost/employee");
         return cxfEndpoint;
@@ -28,7 +28,7 @@ public class EmployeeAH06LHI8Service {
         CxfEndpoint cxfEndpoint = new CxfEndpoint();
         cxfEndpoint.setServiceClass(EmployeeServicePortType.class);
         cxfEndpoint.setAddress(employeeSoapUrl);
-        cxfEndpoint.setWsdlURL("/wsdl/employee.wsdl");
+        cxfEndpoint.setWsdlURL(null);
         cxfEndpoint.setDefaultOperationName("GetEmployeesByName");
         cxfEndpoint.setDefaultOperationNamespace("http://localhost/employee");
         return cxfEndpoint;
